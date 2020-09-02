@@ -36,7 +36,7 @@ jobs:
     - name: Run test
       run: make test
       env:
-        GIT_AUTHOR_NAME: "Gitfile Provider"
+        GIT_AUTHOR_NAME: "Gitops Provider"
         GIT_AUTHOR_EMAIL: "email@work.com"
-        GIT_COMMITTER_NAME: "Gitfile Provider"
+        GIT_COMMITTER_NAME: "Gitops Provider"
         GIT_COMMITTER_EMAIL: "email@work.com"

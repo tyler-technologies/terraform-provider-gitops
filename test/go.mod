@@ -1,4 +1,4 @@
-module github.com/tyler-technologies/terraform-provider-gitfile/test
+module github.com/tyler-technologies/terraform-provider-gitops/test
 
 go 1.14
 

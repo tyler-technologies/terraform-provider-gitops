@@ -6,7 +6,7 @@ app/service documentation.
 ## Example Usage
 
 ```hcl
-provider "gitfile" {
+provider "gitops" {
   repo_url = "https://myverisoncontrolprovider.com/my/repo"
   branch = "master"
   path = "tmp.mycheckoutdestination"

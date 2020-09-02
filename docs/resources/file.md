@@ -1,12 +1,12 @@
-# <resource name> gitfile_file
+# <resource name> gitops_file
 
 Use this resource to create, read, update, and delete files in the underlying gitops repository.
 
 ## Example Usage
 
 ```hcl
-resource "gitfile_file" "test_file" {
-  checkout = gitfile_checkout.test_checkout.id
+resource "gitops_file" "test_file" {
+  checkout = gitops_checkout.test_checkout.id
   path = "terraform"
   contents = "Terraform making commits"
 }
@@ -20,4 +20,4 @@ resource "gitfile_file" "test_file" {
 
 ## Attribute Reference
 
-* `id` - The id of the created file. This is usually passed to gitfile_commit
+* `id` - The id of the created file. This is usually passed to gitops_commit

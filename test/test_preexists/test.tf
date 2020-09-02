@@ -1,25 +1,25 @@
-provider "gitfile" {
+provider "gitops" {
     repo_url = "../example.git"
     branch = "master"
     path = "checkout"
 }
 
-resource "gitfile_checkout" "test" {}
+resource "gitops_checkout" "test" {}
 
-resource "gitfile_file" "test" {
-    checkout = gitfile_checkout.test.id
+resource "gitops_file" "test" {
+    checkout = gitops_checkout.test.id
     path = "terraform"
     contents = "preexisting_commits\n"
 }
-resource "gitfile_commit" "test" {
-    commit_message = "Created by terraform gitfile_commit"
-    handles = ["${gitfile_file.test.id}"]
+resource "gitops_commit" "test" {
+    commit_message = "Created by terraform gitops_commit"
+    handles = ["${gitops_file.test.id}"]
 }
 
-output "gitfile_checkout_path" {
-    value = gitfile_checkout.test.path
+output "gitops_checkout_path" {
+    value = gitops_checkout.test.path
 }
 
-output "gitfile_commit_commit_message" {
-    value = gitfile_commit.test.commit_message
+output "gitops_commit_commit_message" {
+    value = gitops_commit.test.commit_message
 }

@@ -1,4 +1,4 @@
-module github.com/tyler-technologies/terraform-provider-gitfile
+module github.com/tyler-technologies/terraform-provider-gitops
 
 go 1.12
 

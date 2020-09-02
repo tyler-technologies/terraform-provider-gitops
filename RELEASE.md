@@ -1,4 +1,4 @@
-# Building and Releasing terraform-provider-gitfile
+# Building and Releasing terraform-provider-gitops
 
 This repository uses [goreleaser](https://goreleaser.com/) to build and publish releases
 
