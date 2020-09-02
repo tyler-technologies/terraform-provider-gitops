@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="git.png" alt="gitops provider" width="140"/>
+  <img src="git.png" alt="gitops provider" width="180"/>
 
-  <h3 align="center">Terraform gitops Provider</h3>
+  <h3 align="center">Terraform GitOps Provider</h3>
 
   <p align="center">
     <a href="https://github.com/tyler-technologies/terraform-provider-gitops/actions?query=workflow%3Abuild"><img alt="Build" src="https://github.com/tyler-technologies/terraform-provider-gitops/workflows/build/badge.svg"></a>
