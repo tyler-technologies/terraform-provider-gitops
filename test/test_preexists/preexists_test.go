@@ -9,7 +9,7 @@ import (
 
 	"github.com/gruntwork-io/terratest/modules/terraform"
 	"github.com/stretchr/testify/assert"
-	"github.com/tyler-technologies/terraform-provider-gitfile/test/helpers"
+	"github.com/tyler-technologies/terraform-provider-gitops/test/helpers"
 )
 
 func setup() {
@@ -38,14 +38,14 @@ func TestPreexists(t *testing.T) {
 
 	o := &helpers.TerratestDefaultOptions
 	terraform.InitAndApply(t, o)
-	expected_commit_msg := "Created by terraform gitfile_commit"
+	expected_commit_msg := "Created by terraform gitops_commit"
 
 	tests := []struct {
 		output   string
 		expected string
 	}{
-		{"gitfile_checkout_path", "checkout"},
-		{"gitfile_commit_commit_message", expected_commit_msg},
+		{"gitops_checkout_path", "checkout"},
+		{"gitops_commit_commit_message", expected_commit_msg},
 	}
 
 	for _, test := range tests {

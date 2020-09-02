@@ -5,8 +5,8 @@ Creates a symlink within a git repository from terraform
 ## Example Usage
 
 ```hcl
-resource "gitfile_symlink" "test_symlink" {
-  checkout = gitfile_checkout.test.id
+resource "gitops_symlink" "test_symlink" {
+  checkout = gitops_checkout.test.id
   path = "terraform"
   target = "/etc/passwd"
 }
@@ -20,4 +20,4 @@ resource "gitfile_symlink" "test_symlink" {
 
 ## Attribute Reference
 
-* `id` - The id of the created symlink. This is usually passed to gitfile_commit
+* `id` - The id of the created symlink. This is usually passed to gitops_commit

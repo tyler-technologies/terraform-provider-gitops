@@ -1,5 +1,5 @@
 .terraform/**
-terraform-provider-gitfile
+terraform-provider-gitops
 # test/test_*/example.git
 # test/test_*/checkout
 test/test_*/terraform.tfstate.backup

@@ -1,6 +1,6 @@
 # Visit https://goreleaser.com for documentation on how to customize this
 # behavior.
-project_name: terraform-provider-gitfile
+project_name: terraform-provider-gitops
 before:
   hooks:
     - go mod download

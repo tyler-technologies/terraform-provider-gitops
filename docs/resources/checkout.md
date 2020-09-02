@@ -1,14 +1,14 @@
-# <resource name> gitfile_checkout
+# <resource name> gitops_checkout
 
 Checks out a git repository onto your local filesystem from within a terraform provider.
 
-This is mostly used to ensure that a checkout is present, before using the _gitfile_commit_
+This is mostly used to ensure that a checkout is present, before using the _gitops_commit_
 resource to commit some Terraform generated data.
 
 ## Example Usage
 
 ```hcl
-resource "gitfile_checkout" "test_checkout" {}
+resource "gitops_checkout" "test_checkout" {}
 ```
 
 ## Argument Reference
