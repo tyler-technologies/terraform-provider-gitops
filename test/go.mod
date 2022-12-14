@@ -1,6 +1,6 @@
 module github.com/tyler-technologies/terraform-provider-gitops/test
 
-go 1.14
+go 1.18
 
 require (
 	github.com/gruntwork-io/terratest v0.28.8
