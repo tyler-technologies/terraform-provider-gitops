@@ -44,8 +44,8 @@ func TestPreexists(t *testing.T) {
 		output   string
 		expected string
 	}{
-		{"gitops_checkout_path", "checkout"},
-		{"gitops_commit_commit_message", expected_commit_msg},
+		{"gitops_checkout_path", "\"checkout\""},
+		{"gitops_commit_commit_message", "\"" + expected_commit_msg + "\""},
 	}
 
 	for _, test := range tests {

@@ -8,3 +8,5 @@ test/test_*/terraform.tfstate
 test/test_*/.terraform/**
 dist/
 *.log
+
+.terraform.lock.hcl
