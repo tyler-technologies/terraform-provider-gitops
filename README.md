@@ -14,6 +14,13 @@
 
 ---
 
+# DEPRECATION NOTICE
+
+Tyler is  moving away from supporting this repository. We will deprecate and archive it on August 1, 2024, removing it from public access. If you have forked this repo, please feel free to [detach your fork](https://support.github.com/request/fork) and continue development on your own. 
+
+Cheers.
+Tyler Technologies
+
 ## Synopsis
 
 A [Terraform](http://terraform.io) cloud optimized plugin to manage files in git repositories.
